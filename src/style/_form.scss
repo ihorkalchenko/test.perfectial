@@ -1,0 +1,160 @@
+.form-header {
+  padding-bottom: 38px;
+
+  h3 {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 38px;
+  }
+
+  p {
+    margin: 9px 0 0;
+    font-size: 14px;
+  }
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 21px;
+
+  & .form-group {
+    margin: 0;
+  }
+}
+
+.form-label {
+  font-size: 0.875rem;
+  line-height: 16px;
+  opacity: .5;
+}
+
+.form-input,
+.form-select {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 6px 12px;
+  font-size: 1rem;
+  line-height: 18px;
+  color: #333;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(51,51,51,.5);
+  border-radius: 3px;
+}
+
+input[type="email"].form-input {
+  padding-right: 44px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='20' height='17' viewBox='0 0 20 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='mail_logo'%3E%3Cpath id='Shape' fill-rule='evenodd' clip-rule='evenodd' d='M2.8 1H17.2C18.19 1 19 1.84375 19 2.875V14.125C19 15.1562 18.19 16 17.2 16H2.8C1.81 16 1 15.1562 1 14.125V2.875C1 1.84375 1.81 1 2.8 1Z' stroke='%23999999' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath id='Shape_2' d='M19 3L10 9.42857L1 3' stroke='%23999999' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) 50%;
+}
+
+.form-select {
+  padding-right: 38px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 7L13 1' stroke='%23333333' stroke-opacity='0.5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 12px) 50%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-footer {
+  padding-top: 51px;
+  padding-bottom: 104px;
+  text-align: right;
+}
+
+.form-btn {
+  width: 100%;
+  max-width: 300px;
+  padding: 18px 36px;
+  font-size: 1.125rem;
+  line-height: normal;
+  text-transform: uppercase;
+  border-radius: 10px;
+  color: #fff;
+  background: linear-gradient(10.65deg, #F57E80 0%, #D43535 119.64%);
+  box-shadow: 0 0 10px rgba(51,51,51,.3);
+
+  &:hover, &:active {
+    background: linear-gradient(10.65deg, #F57E80 0%, #D43535 0%);
+    box-shadow: 0 0 10px rgba(51,51,51,.4);
+  }
+}
+
+// checkbox
+.checkbox {
+  position: relative;
+  display: block;
+  padding-left: 25px;
+}
+
+.checkbox-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+
+  &:checked ~ .checkbox-label::before {
+    color: #fff;
+  }
+
+  &:checked ~ .checkbox-label::after {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%333' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+  }
+
+  &:focus ~ .checkbox-label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  &:active ~ .checkbox-label::before {
+    color: #fff;
+    background-color: #b3d7ff;
+  }
+
+  &:disabled ~ .custom-control-label {
+    color: #6c757d;
+
+    &::before {
+      background-color: #e9ecef;
+    }
+  }
+}
+
+.checkbox-label {
+  position: relative;
+  margin-bottom: 0;
+  font-size: .875rem;
+  line-height: 16px;
+  color: rgba(51,51,51, .5);
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -25px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    pointer-events: none;
+    content: "";
+    user-select: none;
+    background-color: #fff;
+    border: 1px solid rgba(51,51,51,.5);
+    border-radius: 3px;
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: -25px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60% 60%;
+  }
+}

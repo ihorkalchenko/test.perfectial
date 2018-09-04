@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>test task | ihor kalchenko</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:500|Roboto:500" rel="stylesheet">
+    <link href="./css/site.css" rel="stylesheet">
+</head>
+<body>
+    <header class="pxt-header container">
+        <h1 class="pxt-logo">pixetic <span>design agency</span></h1>
+    </header>
+    <main class="pxt-main">
+        <section class="pxt-content container">
+
+<form class="pxt-form">
+
+    <div class="pxt-personal">
+        <div class="form-header">
+            <h3>Fill in the form</h3>
+        </div>
+        <div class="row-m">
+            <div class="col-m">
+                <div class="row-s">
+                    <div class="col-s">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Name</label>
+                            <input class="form-input" id="name" type="text">
+                        </div>
+                    </div>
+                    <div class="col-s">
+                        <div class="form-group">
+                            <label class="form-label" for="surname">Surname</label>
+                            <input class="form-input" id="surname" type="text">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label class="form-label" for="companyName">Company name</label>
+                    <div class="form-group">
+                        <input class="form-input" id="companyName" type="text">
+                        <a class="add-logo" href="#"><i>+</i> Add logo</a>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-input" id="email" type="email">
+                </div>
+    
+                <div class="form-group">
+                    <label class="form-label" for="phoneNumber">Phone number</label>
+                    <input class="form-input" id="phoneNumber" type="text">
+                </div>
+            </div>
+    
+            <div class="col-m">
+                <div class="form-group">
+                    <label class="form-label" for="country">Country</label>
+                    <select class="form-select" id="country">
+                        <option selected></option>
+                        <option value="1">Ukraine</option>
+                        <option value="2">USA</option>
+                        <option value="3">France</option>
+                    </select>
+                </div>
+    
+                <div class="row-s">
+                    <div class="col-s">
+                        <div class="form-group">
+                            <label class="form-label" for="city">City</label>
+                            <input class="form-input" id="city" type="text">
+                        </div>
+                    </div>
+                    <div class="col-s">
+                        <div class="form-group">
+                            <label class="form-label" for="postIndex">Postal code</label>
+                            <input class="form-input" id="postIndex" type="text">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label class="form-label" for="address">Address</label>
+                    <input class="form-input" id="address" type="text">
+                </div>
+    
+                <div class="form-group">
+                    <div class="checkbox">
+                        <input type="checkbox" class="checkbox-input" id="accept">
+                        <label class="checkbox-label" for="accept">I accept Terms and Service</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- / personal -->
+    <div class="pxt-shipping">
+        <div class="form-header">
+            <h3>Shipping & billing details</h3>
+            <p>You can change the shipping method</p>
+        </div>
+    
+        <div class="tab">
+            <nav class="tab-nav">
+                <a data-tab-btn="standard" class="tab-btn standard">
+                    <span class="btn-h">Standard</span>
+                    <span class="btn-p">5$ in 10 days</span>
+                </a>
+                <a data-tab-btn="express" class="tab-btn express active">
+                    <span class="btn-h">Express</span>
+                    <span class="btn-p">25$ in 5 days</span>
+                </a>
+                <a data-tab-btn="premium" class="tab-btn premium">
+                    <span class="btn-h">Premium</span>
+                    <span class="btn-p">50$ for tomorrow</span>
+                </a>
+            </nav>
+    
+            <div class="tab-content">
+                <div data-tab-pane="standard" class="tab-pane">
+                    <div class="payment">
+                        <h4 class="payment-title">"Standard" S&B content</h4>
+                    </div>
+                </div>
+                <div data-tab-pane="express" class="tab-pane active">
+                    <div class="payment">
+                        <div class="payment-method">
+                            <h4 class="payment-title">Payment method</h4>
+                            <nav class="payment-nav type-one">
+                                <a class="nav-link aexpress" href="#"></a>
+                                <a class="nav-link mastercard active" href="#"></a>
+                                <a class="nav-link visa" href="#"></a>
+                                <a class="nav-link discover" href="#"></a>
+                            </nav>
+    
+                            <nav class="payment-nav type-two">
+                                <a class="nav-link paypal" href="#"></a>
+                                <a class="nav-link amazon" href="#"></a>
+                            </nav>
+                        </div>
+                        <div class="payment-details">
+                            <h4 class="payment-title">Card details</h4>
+                            <div class="payment-card">
+                                <div class="form-group">
+                                    <label class="form-label" for="cardNumber">Card number</label>
+                                    <div class="row">
+                                        <div class="col-4"><input class="form-input" id="cardNumber" type="text"></div>
+                                        <div class="col-4"><input class="form-input" type="text"></div>
+                                        <div class="col-4"><input class="form-input" type="text"></div>
+                                        <div class="col-4"><input class="form-input" type="text"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <div class="form-group">
+                                                <label class="form-label" for="expDate">Expiration date</label>
+                                                <input class="form-input" id="expDate" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-4 offset-1">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cvc">CVC/CVV</label>
+                                                <input class="form-input" id="cvc" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-tab-pane="premium" class="tab-pane">
+                    <div class="payment">
+                        <h4 class="payment-title">"Premium" S&B content</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- /shipping -->
+
+    <div class="form-footer">
+        <button type="submit" class="btn form-btn">Submit</button>
+    </div>
+</form>
+
+            </section>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="./js/site.js"></script>
+    </body>
+</html>
